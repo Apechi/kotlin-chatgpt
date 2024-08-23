@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ChatGPT Lite</string>
     <string name="title_activity_conversations">Conversations</string>
+
+<!--    adsmob-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="sdk_key_applovin">T7PPns0K6JV00uGv0ZAEKsTWrpwA-N4Hchi_KKecaqTa_U5zQcyyoI_pTcC5TM1OgfrLz5dWGdASKWgK6l5Sks</string>
+
 </resources>

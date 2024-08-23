@@ -10,16 +10,18 @@ plugins {
     id 'com.google.dagger.hilt.android'
 
     id 'kotlinx-serialization'
+
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
 }
 
 android {
-    namespace 'com.chatgptlite.wanted'
-    compileSdk 33
+    namespace 'com.theprime.primechatters'
+    compileSdk 35
 
     defaultConfig {
-        applicationId "com.chatgptlite.wanted"
+        applicationId "com.theprime.primechatters"
         minSdk 24
-        targetSdk 33
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -60,6 +62,11 @@ android {
 }
 
 dependencies {
+    //ads
+    implementation 'com.github.saputra1337:ModulAdsAdmob:1.0.0'
+    //ads
+
+    implementation 'androidx.compose.compiler:compiler:1.5.15'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
     implementation 'androidx.activity:activity-compose:1.7.0'
@@ -69,6 +76,10 @@ dependencies {
     implementation 'androidx.compose.ui:ui-viewbinding:1.4.0'
     implementation 'androidx.compose.ui:ui-util:1.4.0'
     implementation 'androidx.compose.material:material-icons-extended:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.activity:activity:1.9.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -92,11 +103,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
     // Dependency injection
-    implementation "com.google.dagger:hilt-android:2.44"
-    implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
-    kapt "com.google.dagger:hilt-compiler:2.44"
-    implementation 'com.google.code.gson:gson:2.9.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation "com.google.dagger:hilt-android:2.51"
+    implementation "androidx.hilt:hilt-navigation-compose:1.2.0"
+    kapt "com.google.dagger:hilt-compiler:2.51"
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
 
     // Networking
     def retrofit_version = '2.9.0'
